@@ -1,7 +1,7 @@
 //
 // Log in to application using the Discovery API
 //
-console.error("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 var discoveryServiceUri   = "https://integration.mobileconnect.io/telstra_group/v2/discovery";
 //var discoveryServiceUri   = "https://production.mobileconnect.io/telstra_group/v2/discovery";
 var discoveryClientID     = "E6ZE9L8JVy43KNXmgquzX4MA1tsXrDoO";
