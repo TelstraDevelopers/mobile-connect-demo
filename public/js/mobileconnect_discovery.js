@@ -24,6 +24,7 @@ function startActiveDiscovery() {
 }
 
 function activeDiscoveryComplete(discoveryResult, status) {
+    console.log("Discovery result: " + JSON.stringify(discoveryResult));
     if (status == 200 && discoveryResult && !!discoveryResult.getResponse()) {
         if (discoveryResult.getResponse().getApiFunction('operatorid', 'authorization')) {
             runAuthorization(discoveryResult);
