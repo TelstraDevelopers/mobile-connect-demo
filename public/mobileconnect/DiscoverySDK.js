@@ -997,6 +997,7 @@ function discoveryProcessLocation(href) {
  * helperRedirectMccMnc
  */
 function helperRedirectMccMnc() {
+	console.log("helperRedirectMccMnc called");
 	if (!!window.opener && !!window.opener.discoveryProcessLocation && window.opener.discoveryProcessLocation(window.location.href)) {
 		// IE workaround
 	} else if(!!window.opener && !window.opener.closed){
