@@ -37,7 +37,8 @@ function runAuthorization(discoveryResult) {
     // this is the client_id (API key) to use for all calls returned by the Discovery API. It may be different
     // to the client ID you use in the initial discovery phase.
     //var apiClientID = discoveryResult.getResponse().getClient_id();
-    var apiClientID = 'Ed40S0aPAvfWLuVnsjCEawR5fid26w6R';
+    //var apiClientID = 'Ed40S0aPAvfWLuVnsjCEawR5fid26w6R';
+    var apiClientID = 't1stUol3apgAMvo4ztBE2CNu2cGdNUVF';
     
     // this is the encrypted MSISDN for the user attempting to login
     var subscriberId = discoveryResult.getResponse().getSubscriber_id();
