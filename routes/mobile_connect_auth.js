@@ -10,7 +10,6 @@ router.get('/mobileconnect', function(req, res) {
     var acr_values = 2;
     var nonce = util.guid();
     var state = util.guid();
-    console.log("client ID used for /v1/mobileconnect/authorize call is: " + config.mobileConnect.apiKey);
     res.redirect(config.apiBase + '/v1/mobileconnect/authorize?response_type=code&client_id=' + config.mobileConnect.apiKey + '&scope=' + config.mobileConnect.oauthScope + '&redirect_uri=' + config.mobileConnect.redirectUri + "&nonce=" + nonce + "&state=" + state + "&acr_values=" + acr_values);
 });
 
