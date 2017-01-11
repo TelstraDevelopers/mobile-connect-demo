@@ -29,7 +29,8 @@ var authCallback = function(originalRequest, originalResponse) {
         qs: {
             grant_type: 'authorization_code',
             code: originalRequest.query.code,
-            redirect_uri: config.mobileConnect.redirectUri
+            redirect_uri: config.mobileConnect.redirectUri,
+            scope: 'openid'
         }
     };
 
