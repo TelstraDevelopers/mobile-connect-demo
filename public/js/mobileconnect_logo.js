@@ -3,7 +3,7 @@
 //
 
 //var logoServiceUri = "https://stage-exchange-test.apigee.net/logo/v1";
-var logoServiceUri = "https://integration.mobileconnect.io/logo/v1";
+var logoServiceUri = "https://production.mobileconnect.io/logo/v1";         // The integration endpoint for logo does not exist
 var logoSize = "small";
 var logoColourMode = "normal";
 var logoAspect = "landscape";
