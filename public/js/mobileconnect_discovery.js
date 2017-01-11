@@ -3,7 +3,6 @@
 //
 
 var discoveryServiceUri   = "https://integration.mobileconnect.io/telstra_group/v2/discovery";
-//var discoveryServiceUri   = "https://production.mobileconnect.io/telstra_group/v2/discovery";
 var discoveryClientID     = "E6ZE9L8JVy43KNXmgquzX4MA1tsXrDoO";
 var discoveryClientSecret = "UM2EUXlL62tNK2CTzNSyVXFCfonlu7C5";
 
@@ -35,8 +34,10 @@ function runAuthorization(discoveryResult) {
 
     // this is the client_id (API key) to use for all calls returned by the Discovery API. It may be different
     // to the client ID you use in the initial discovery phase.
-    var apiClientID = discoveryResult.getResponse().getClient_id();
-
+    //var apiClientID = discoveryResult.getResponse().getClient_id();
+    //var apiClientID = 'Ed40S0aPAvfWLuVnsjCEawR5fid26w6R';
+    var apiClientID = 't1stUol3apgAMvo4ztBE2CNu2cGdNUVF';
+    
     // this is the encrypted MSISDN for the user attempting to login
     var subscriberId = discoveryResult.getResponse().getSubscriber_id();
 

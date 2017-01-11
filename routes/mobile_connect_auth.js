@@ -23,12 +23,14 @@ var authCallback = function(originalRequest, originalResponse) {
     var options = {
         uri: config.apiBase + '/v1/mobileconnect/token',
         headers: {
-            "Authorization": "Basic " + config.mobileConnect.exchangeBasicAuth
+            //"Authorization": "Basic " + config.mobileConnect.exchangeBasicAuth
+            "Authorization": "Basic " + config.mobileConnect.mcBasicAuth
         },
         qs: {
             grant_type: 'authorization_code',
             code: originalRequest.query.code,
-            redirect_uri: config.mobileConnect.redirectUri
+            redirect_uri: config.mobileConnect.redirectUri,
+            scope: config.mobileConnect.oauthScope
         }
     };
 
