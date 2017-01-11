@@ -20,7 +20,7 @@ app.use(session({
     genid: function(req) { return uuid.v4(); },
     secret: 'securebank'
 }));
-console.log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
+
 app.use(require('./routes/index'));
 app.use(require('./routes/connect_auth'));
 app.use(require('./routes/mobile_connect_auth'));
