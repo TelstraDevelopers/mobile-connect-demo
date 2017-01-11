@@ -2,7 +2,8 @@
 // Loading the Mobile Connect logo via the Logo API
 //
 
-var logoServiceUri = "https://stage-exchange-test.apigee.net/logo/v1";
+//var logoServiceUri = "https://stage-exchange-test.apigee.net/logo/v1";
+var logoServiceUri = "https://integration.mobileconnect.io/logo/v1";
 var logoSize = "small";
 var logoColourMode = "normal";
 var logoAspect = "landscape";
