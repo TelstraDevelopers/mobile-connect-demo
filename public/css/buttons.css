@@ -58,7 +58,7 @@ img.google {
 .btn-mobileconnect {
     display: inline-block;
     width: 26rem;
-    height: 36px;
+    height: 38px;
     text-decoration: none;
     background-color: antiquewhite;
     text-align: center;
@@ -70,7 +70,7 @@ img.google {
     -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
     -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
     box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
-    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-image: url("/css/mobile-connect-icon.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
