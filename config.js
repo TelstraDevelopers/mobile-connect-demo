@@ -11,9 +11,13 @@ module.exports = (function() {
 
     var exchangeApiKey = process.env['MC_EXCHANGE_KEY'];
     var exchangeApiSecret = process.env['MC_EXCHANGE_SECRET'];
+    var mcApiKey = process.env['MC_API_KEY'];
+    var mcApiSecret = process.env['MC_API_SECRET'];
+    
     var mobileConnect = {
         apiKey: process.env['MC_API_KEY'],
         exchangeBasicAuth: new Buffer(exchangeApiKey + ":" + exchangeApiSecret).toString('base64'),
+        mcBasicAuth: new Buffer(mcApiKey + ":" + mcApiSecret).toString('base64'),
         redirectUri: process.env['MC_REDIRECT_URI'],
         oauthScope: process.env['MC_OAUTH_SCOPE']
     };
