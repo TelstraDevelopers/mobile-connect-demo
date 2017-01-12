@@ -82,7 +82,8 @@ img.google {
 }
 
 .btn-mobileconnect:hover {
-    background-color: #f0e0c7;
+    /*background-color: #f0e0c7;*/
+    background-image: url("/css/mobile-connect-icon-hover.png");
 }
 
 /**
